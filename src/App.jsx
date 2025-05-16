@@ -53,6 +53,12 @@ const App = () => {
     });
   };
 
+
+  // Remove an item
+  const handleRemoveProfile = (id) => {
+    setProfiles(profiles.filter((profile) => profile.id !== id));
+  }
+
   return (
     <div className='mainDiv'>
       <h2>Profile Card</h2>
@@ -77,6 +83,7 @@ const App = () => {
             title={person.title}
             img={person.img}
             bgColor={person.bgColor}
+            onRemove={() => {handleRemoveProfile(person.id)}}
           />
         ))}
       </div>

@@ -1,5 +1,5 @@
 
-function ProfileCard({ name, title, img, bgColor='bg-green' }) {
+function ProfileCard({ name, title, img, bgColor='bg-green', onRemove }) {
 
   const cardClass = `card ${bgColor}`;
 
@@ -8,6 +8,7 @@ function ProfileCard({ name, title, img, bgColor='bg-green' }) {
       <img src={img} alt={`${name}'s photo is not found`}/>
       <h3>{name}</h3>
       <p>{title}</p>
+      <button onClick={onRemove}>Remove</button>
     </div>
   );
 }
