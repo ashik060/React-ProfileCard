@@ -1,0 +1,73 @@
+.mainDiv {
+  display: grid;
+  grid-template-columns: 4, 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mainDiv h2 {
+  text-align: center;
+}
+
+.mainDiv form {
+  display: grid;
+  grid-template-columns: 4, 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 2rem;
+  background: #f2f6f4; 
+}
+
+.mainDiv input {
+  padding: .5rem;
+  margin: 10px;
+}
+
+.mainDiv button {
+  background: #ff0000;
+  padding: 10px;
+  margin: auto;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mainDiv button:hover{
+  background: #de1111;
+}
+.app {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  /* background: #3498db; */
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 10px;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* Background color classes */
+.bg-blue {
+  background-color: #3498db;
+}
+.bg-red {
+  background-color: #e74c3c;
+}
+.bg-green {
+  background-color: #2ecc71;
+}
