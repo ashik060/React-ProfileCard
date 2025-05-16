@@ -1,9 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProfileCard from './ProfileCard';
 import defaulImage from './Images/formal.jpg'
 const App = () => {
 
-  const [profiles, setProfiles] = useState([]);
+  const [profiles, setProfiles] = useState(() => {
+    const savedProfiles = localStorage.getItem("profiles");
+    return savedProfiles ? JSON.parse(savedProfiles) : [];
+  });
+
+  // যখন profiles আপডেট হবে তখন localStorage-এ সেভ করবো
+  useEffect(() => {
+    localStorage.setItem("profiles", JSON.stringify(profiles));
+  }, [profiles]);
 
   const [formData, setFormData] = useState({
     name: "",
