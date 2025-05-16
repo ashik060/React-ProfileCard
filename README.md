@@ -9,3 +9,7 @@
 # This screenshot is after adding three profile card.
 
 ![alt text](src/Images/profileCard2.png)
+
+After adding remove button
+
+![alt text](src/Images/profileCard3.png)
